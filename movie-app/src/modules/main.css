@@ -1,0 +1,21 @@
+.search-bar{
+    .bar-wrapper{
+      border: 1px solid #2e2e2e;
+      padding: 10px 18px 10px 18px;
+      border-radius: 18px;
+      
+    }
+  }
+  .container {
+    padding: 2px 16px;
+  }
+  
+  input{
+    border: none;
+    outline: none !important;
+  }
+  .searchIcon{
+    height: 25px;
+    cursor: pointer;
+  }
+  
