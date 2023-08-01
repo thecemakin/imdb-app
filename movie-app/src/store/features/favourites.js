@@ -1,24 +1,24 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = { 
-    Poster: "",
-    Title: "",
-    Year: "",
-    imdbID: ""
-}
+const initialState = {
+  movie: [],
+};
 
 export const Favourites = createSlice({
-    name : "favourites",
-    initialState : {value : initialState},
-    reducers : {
-        addFavourites: (state,action) => {
-            state.value = action.payload
-        },
-        delFavourites: (state) => {
-            state.value = initialState
-        }
-    }
-})
+  name: "favourites",
+  initialState: initialState,
+  reducers: {
+    addFavourites: (state, action) => {
+        
+        state.movie.push(action.payload.movie)
+        
+    },
+    delFavourites: (state, action) => {
+        const sameId = state.movie.filter(item => item.id == action.payload.imdbID)
+
+    },
+  },
+});
 
 export const favouritesReducer = Favourites.reducer;
-export const { addFavourites,delFavourites } = Favourites.actions;
+export const { addFavourites, delFavourites } = Favourites.actions;

@@ -49,11 +49,7 @@ export default function Main() {
       </div>
       {movies?.length > 0 ? (
         <div className="d-flex justify-content-center">
-          <div className="container d-flex col-lg-12 col-md-6 col-sm-3 row">
-            {movies.map((movie, index) => (
-              <MovieCard key={index} movie={movie} />
-            ))}
-          </div>
+              <MovieCard data ={movies} />
         </div>
       ) : (
         <h2>No movie yet</h2>

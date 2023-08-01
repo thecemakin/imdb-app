@@ -1,6 +1,6 @@
 .search-bar {
   .bar-wrapper {
-    border: 1px solid #2e2e2e;
+    border: 1px solid #d1d1d1;
     padding: 10px 18px 10px 18px;
     border-radius: 18px;
   }
@@ -12,8 +12,26 @@
 input {
   border: none;
   outline: none !important;
+  background-color: #2e2e2e00;
+  color: #fff;
 }
 .searchIcon {
   height: 25px;
   cursor: pointer;
+}
+.react-multi-carousel-track {
+  display: flex;
+}
+.react-multi-carousel-item{
+  justify-content: center;
+  width: 250px !important;
+}
+.poster{
+  height: 250px!important;
+}
+.react-multi-carousel-list{
+  padding: 10px 0 10px 0;
+}
+.main{
+  background: url("../assets/header-bg.jpg") center !important;
 }

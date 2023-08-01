@@ -1,4 +1,19 @@
 .header{
-    background-color: #1b1467;
+    background: url("../assets/header-bg.jpg") !important;
     color: #fff;
+}
+ul{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+li{
+    list-style-type: none;
+    
+}
+
+a{
+    color: #fff !important;
+    text-decoration: none !important;
+    font-size: 18px;
+
 }

@@ -6,7 +6,7 @@ const CarouselApp = ({ data }) => {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 3,
-      slidesToSlide: 3, // optional, default to 1.
+      slidesToSlide: 0.3, // optional, default to 1.
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -27,7 +27,7 @@ const CarouselApp = ({ data }) => {
       showDots={false}
       responsive={responsive}
       ssr={true} // means to render carousel on server-side.
-      infinite={true}
+      infinite={false}
       autoPlaySpeed={1000}
       keyBoardControl={true}
       customTransition="all .5"
@@ -38,8 +38,8 @@ const CarouselApp = ({ data }) => {
       itemClass="carousel-item-padding-20-px"
     >
             {data?.map((carousel, index) => (
-                <div className="px-5 py-5" key={index}><img style={{maxHeight: 400,maxWidth: 700,}}
-                className="py-1 poster"
+                <div className="" key={index}><img
+                className="my-1 poster"
                 src={
                     carousel.Poster !== "N/A"
                     ? carousel.Poster
